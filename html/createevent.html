@@ -1,0 +1,95 @@
+!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="E:\Uni work\3rd Year\CM3108\event.css">
+
+
+</head>
+
+<body>
+
+  <h3 style = "padding-left: 750px;"> Create Event </h3>
+
+  <form>
+
+    <fieldset>
+
+    <p>
+    <label style = "padding-right: 300px; padding-left: 200px;"> Event Name </label>
+    <input type = "text" id = "myName" value = "" style= " align: center; x: 425px; y: 189px; width: 382px; height: 35px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;"/>
+   </p>
+
+    <p>
+      <label style = "padding-right: 307px; padding-left: 200px;"> Event Type </label>
+      <input type = "text" id = "myType" value = "" style= " align: center; x: 425px; y: 189px; width: 382px; height: 35px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;"/>
+    </p>
+
+    <p>
+      <label style = "padding-right: 350px; padding-left: 200px;"> Event Date </label>
+      <input type = "date" id = "myDate" value = ""/>
+    </p>
+
+    <p>
+      <label style = "padding-right: 282px; padding-left: 200px;"> Event Location </label>
+      <input type = "text" id = "myLocation" value = "" style= " align: center; x: 425px; y: 189px; width: 382px; height: 35px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;"/>
+    </p>
+
+    <p>
+      <label style = "padding-right: 264px; padding-left: 200px;"> Event Description </label>
+      <textarea id = "descriptionArea" rows = "4" cols = "49" style= " align: center; x: 425px; y: 189px; width: 382px; height: 60px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;">Your Text Here</textarea>
+    </p>
+
+    <p>
+      <label style = "padding-right: 300px; padding-left: 200px;" > Assign Staff </label>
+      <select id = "addStaff">
+        <option value= "assignStaff"> Assign Staff Members </option>
+        <option value= "bob"> Bob </option>
+        <option value= "dave"> Dave </option>
+      </select>
+      <button type= "button" id = "addStaff()"> Add Staff </button>
+    </p>
+
+
+    <p>
+      <label style = "padding-right: 300px; padding-left: 200px;"> Current Staff </label>
+      <select id = "currentStaff">
+        <option value= "Staff"> Current Staff Members </option>
+      </select>
+      <button type= "button" id= "removeStaff"> Remove Staff </button>
+    </p>
+
+
+    <p>
+      <label style = "padding-right: 266px; padding-left: 200px;"> Create Event Task </label>
+      <input type = "text" id = "addTasks" value = "" style= " align: center; x: 425px; y: 189px; width: 382px; height: 30px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;"/>
+      <button type= "button" onclick = "addTask()"> Add Task </button>
+    </p>
+
+    <p>
+      <label style = "padding-right: 300px; padding-left: 200px;"> Current Event Task </label>
+      <select id = "currentTask">
+        <option value= "currentTasks"> Current Event Tasks </option>
+
+      </select>
+      <button type= "button"  id = "removeTask" > Remove Task </button>
+    </p>
+
+  </fieldset
+
+</form>
+
+<button type = "button" style = "color: black;" > Cancel </button>
+<button type = "button" > Add Event </button>
+
+
+
+
+
+</body>
+
+
+
+
+</html>
