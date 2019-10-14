@@ -1,0 +1,36 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/EventTimeline.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"
+  integrity="sha256-23hi0Ag650tclABdGCdMNSjxvikytyQ44vYGo9HyOrU="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+
+<div ng-app="EventTimeline">
+  <div>
+    <div class="form">
+      <h1>Event Timeline</h1>
+      <input type="select" placeholder="Select an Event" id="task" />
+      <button class="button" id="add-button">Select Event</button>
+    </div>
+    <div class="flex">
+      <div id="containing_div" class="scrum-board backlog">
+        <h2>To Do</h2>
+      </div>
+
+      <div class="scrum-board in-progress">
+        <h2>In progress</h2>
+      </div>
+      <div class="scrum-board done">
+        <h2>Done</h2>
+      </div>
+
+    </div>
+
+    <script src="../js/EventTimeline.js"></script>
+  </div>
