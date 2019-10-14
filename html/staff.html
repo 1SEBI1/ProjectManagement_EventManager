@@ -1,9 +1,69 @@
 <!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport:" content="width=device-width, initial-scale=10.0">
+  <link rel="stylesheet" href="..../css/staff.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"
+  integrity="sha256-23hi0Ag650tclABdGCdMNSjxvikytyQ44vYGo9HyOrU="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
 
-  <body>
+<body>
+  <h3>Create Staff</h3>
+  <form>
+    <div>
+      <div class="text">
+        <label>Staff Name</label>
+        <input type="text" id="StaffName" value="">
+      </div>
+      <div class="check">
+        <label>Skills</label>
+        <label class="container">Skill1
+          <input type="checkbox" checked="checked"
+          <span class="checkmark"></span>
+        </label>
 
-  </body>
+        <label class="container">Skill2
+          <input type="checkbox" checked="checked"
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Skill3
+          <input type="checkbox" checked="checked"
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Skill4
+          <input type="checkbox" checked="checked"
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Skill5
+          <input type="checkbox" checked="checked"
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="text">
+        <label>Other Skills</label>
+        <input type="text" id="OtherSkills" value="">
+        <button type="button" id="addskill">Add Skill</button>
+        <button type="button" id="removeSkill">Remove Skill</button>
+      </div>
+
+      <div class="mainbutton">
+        <button type="button">Cancel</button>
+      </div>
+
+      <div class="mainbutton">
+        <button type="button">Create Staff</button>
+      </div>
+
+    </div>
+  </form>
+</body>
+
+<script src="../github/ProjectManagement_EventManager/js/staff.js"></script>
+
 </html>
