@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport:" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="..../css/staff.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"
+  integrity="sha256-23hi0Ag650tclABdGCdMNSjxvikytyQ44vYGo9HyOrU="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h3>Create Staff</h3>
+  <form>
+    <div>
+      <div class="list">
+        <label>Select Event</label>
+        <select id="selectEvent">
+          <option value="event1">Event1</option>
+          <option value="event2">Event2</option>
+          <option value="event3">Event3</option>
+        </select>
+      </div>
+
+      <div class="list">
+        <label>Select Staff</label>
+        <select id="selectStaff">
+          <option value="staff1">Staff1</option>
+          <option value="staff2">Staff2</option>
+          <option value="staff3">Staff3</option>
+        </select>
+      </div>
+
+      <div class="check">
+        <label>Skills</label>
+        <label class="container">Task1
+          <input type="checkbox" checked="checked"
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Task2
+          <input type="checkbox" checked="checked"
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Task3
+          <input type="checkbox" checked="checked"
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Task4
+          <input type="checkbox" checked="checked"
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Task5
+          <input type="checkbox" checked="checked"
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="mainbutton">
+        <button type="button">Cancel</button>
+      </div>
+
+      <div class="mainbutton">
+        <button type="button">Save Staff</button>
+      </div>
+
+    </div>
+  </form>
+</body>
+
+<script src="/js/task.js"></script>
+
+</html>
