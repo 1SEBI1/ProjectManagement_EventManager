@@ -7,10 +7,11 @@ body{
   padding: 20px;
   text-align: center;
 }
-.form input[type="text"]{
-  padding: 10px;
-  box-shadow: inset 2px 2px 2px rgba(2,5,0,0.2);
-  border: none;
+.form select{
+  margin: 0 auto;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #60666d;
 }
 .button{
   display: inline-block;
@@ -44,12 +45,6 @@ body{
   color: #007b03;
   font-weight: normal;
 }
-.button-delete{
-  background: transparent;
-  box-shadow: none;
-  color: #be0000;
-  font-weight: normal;
-}
 .form > h2{
   margin-top: 0
 }
@@ -77,8 +72,6 @@ body{
   position: relative;
   display: block;
   padding: 10px;
-  border: 1px solid #dddddd;
-  border-left: 5px solid #ccc;
   margin-bottom: 10px;
   border-radius: 5px;
   background-color: #f1f1f1;
@@ -98,18 +91,6 @@ body{
 }
 .margin-top-10{
   margin-top: 10px;
-}
-.drag{
-  font-size: 12px;
-  color: #333;
-  text-decoration: none;
-  position: absolute;
-    top:5px;
-  right: 5px;
-  border: 1px solid #ccc;
-  padding: 3px;
-  border-radius: 5px;
-  cursor: move;
 }
 .placeholder {
   display: block;
