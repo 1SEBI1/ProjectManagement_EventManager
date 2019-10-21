@@ -87,6 +87,7 @@ window.onload = function() {
           alert("Event: " + info.event.title + "\n" +
                 "Start: " + info.event.start.toUTCString() + "\n" +
                 "End: " + info.event.end.toUTCString());
+          info.el.popover("show");
         }
       });
       calendar.render();
