@@ -76,7 +76,12 @@ window.onload = function() {
       console.log(el);
       var calendar = new FullCalendar.Calendar(el, {
         plugins: [ "dayGrid" ],
-        events: events
+        events: events,
+        eventClick: function(info) {
+          alert("Event: " + info.event.title + "\n" +
+                "Start: " + info.event.start.toUTCString() + "\n" +
+                "End: " + info.event.end.toUTCString());
+        }
       });
       calendar.render();
     //});
