@@ -46,7 +46,7 @@ label {
 /* Button */
 .mainbutton {
   display: inline-block;
-  padding: 200px;
+  padding: 20px;
   background: linear-gradient(#79a6e2 2%, #3366aa 5%, #1e4e8e);
   border: none;
   border-radius: 5px;
