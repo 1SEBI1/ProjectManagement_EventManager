@@ -81,8 +81,7 @@ window.onload = function() {
       calendar.render();
     //});
   };
-
-  init();
+  
   let testDate = new Date();
   //testDate.setMonth(12);
   //testDate.setYear(2019);
