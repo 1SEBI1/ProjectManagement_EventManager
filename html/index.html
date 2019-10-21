@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Core Boostrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Core Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Core FullCalendar CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/core@4.3.1/main.min.css" />
+    <!-- Core FullCalendar JS -->
+    <script src="https://unpkg.com/@fullcalendar/core@4.3.1/main.min.js"></script>
+    <!-- FullCalendar Plugins -->
+    <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/daygrid/main.min.css" />
+    <script src="https://unpkg.com/@fullcalendar/daygrid/main.min.js"></script>
+    <!--<script src="https://unpkg.com/@fullcalendar/bootstrap/main.min.js"></script>-->
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- App JS -->
+    <script src="/js/index.js"></script>
+    <!-- App CSS -->
+    <link rel="stylesheet" href="/css/index.css"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Calendar</h1>
+        </div>
+      </div>
+      <div class="row" id="calendar-controls">
+        <div class="col mx-0 px-0">
+            <button type="button" class="btn btn-primary btn-sm btn-block">Create Event</button>
+        </div>
+        <div class="col mx-0 px-0">
+            <button type="button" class="btn btn-primary btn-sm btn-block">View Past Events</button>
+        </div>
+        <div class="col mx-0 px-0">
+            <button type="button" class="btn btn-primary btn-sm btn-block">View Ongoing Events</button>
+        </div>
+        <div class="col mx-0 px-0">
+            <button type="button" class="btn btn-primary btn-sm btn-block">Create Staff</button>
+        </div>
+        <div class="col mx-0 px-0">
+            <button type="button" class="btn btn-primary btn-sm btn-block">View Staff</button>
+        </div>
+        <div class="col mx-0 px-0">
+            <button type="button" class="btn btn-primary btn-sm btn-block">Assign Tasks</button>
+        </div>
+      </div>
+      <div class="row">
+        <div id="calendar-display" class="col">
+          <!--
+          <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function() {
+              var el = document.getElementById("calendar-display");
+              console.log(el);
+              var calendar = new FullCalendar.Calendar(el, {
+                plugins: [ "dayGrid" ]
+              });
+              calendar.render();
+            });
+          </script>
+        -->
+        </div>
+      </div>
+      <div class="row" id="diagnostics"></div>
+      <div class="row">
+        <div class="col">
+          <p>Event Management System.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
