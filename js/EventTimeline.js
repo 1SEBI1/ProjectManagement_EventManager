@@ -47,19 +47,21 @@ function init() {
 
   $(".button-assignedTo").hover(function() {
       var tooltip = $(this).closest(".assignedTo").prevObject[0].attributes[1].value;
-      var longestWorker = $(this).closest(".assignedTo").prevObject[0].attributes[2].value;
+      var tooltipWidth = $(this).closest(".assignedTo").prevObject[0].attributes[2].value;
 
       $("#tooltip").text(tooltip);
 
       var elem = $(this).closest(".assignedTo").prevObject[0];
       var parent = $(this).closest(".assignedTo").prevObject[0].offsetParent;
+      var body = $(this).closest(".assignedTo").prevObject[0].offsetParent.offsetParent;
       var top = elem.offsetTop + parent.offsetTop;
-      var height = elem.offsetHeight + parent.offsetHeight;
       var width = elem.offsetWidth;
+      var bodyWidth = body.offsetWidth;
 
-      if ($(this).closest(".assignedTo").prevObject[0].parentElement.parentElement.parentElement.className == "scrum-board done") {
-        var left = elem.offsetLeft + parent.offsetLeft - elem.offsetWidth - longestWorker - 10;
-      } else {
+      if((elem.offsetLeft + parent.offsetLeft + elem.offsetWidth + parseInt(tooltipWidth) + 10) > bodyWidth){
+        var left = elem.offsetLeft + parent.offsetLeft - elem.offsetWidth - parseInt(tooltipWidth) - 10;
+      }
+      else{
         var left = elem.offsetLeft + parent.offsetLeft;
       }
 
@@ -68,7 +70,7 @@ function init() {
         left: (left + width) + "px"
       }).show();
 
-      $("#tooltip").css("width", longestWorker + "px");
+      $("#tooltip").css("width", tooltipWidth + "px");
 
       document.getElementById("tooltip").style.visibility = "visible";
     },
