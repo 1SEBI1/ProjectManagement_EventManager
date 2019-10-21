@@ -1,19 +1,22 @@
-body{
+body {
   font-family: Arial;
   color: #555;
 }
-.form{
+
+.form {
   background-color: #f1f1f1;
   padding: 20px;
   text-align: center;
 }
-.form select{
+
+.form select {
   margin: 0 auto;
   font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
   font-size: 18px;
   color: #60666d;
 }
-.button{
+
+.button {
   display: inline-block;
   padding: 10px;
   background: linear-gradient(#79a6e2 2%, #3366aa 5%, #1e4e8e);
@@ -23,52 +26,85 @@ body{
   font-weight: bold;
   font-size: 16px;
   box-shadow: 0px 3px 0px #113c75,
-              0px 5px 5px #333;
+    0px 5px 5px #333;
   margin-right: 5px;
 }
 
-.button-backlog{
+.button-backlog {
   background: transparent;
   box-shadow: none;
   color: #3366aa;
   font-weight: normal;
 }
-.button-progress{
+
+.button-progress {
   background: transparent;
   box-shadow: none;
   color: #c06300;
   font-weight: normal;
 }
-.button-done{
+
+.button-done {
   background: transparent;
   box-shadow: none;
   color: #007b03;
   font-weight: normal;
 }
-.form > h2{
+
+.button-assignedTo {
+  background: transparent;
+  box-shadow: none;
+  color: #fc035a;
+  font-weight: normal;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: auto;
+  background-color: #ff8282;
+  color: #000000;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 5px;
+  font-size: 16px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.button-assignedTo:focus {
+  outline-width: 0px;
+}
+
+.form>h2 {
   margin-top: 0
 }
-.col-3rds{
+
+.col-3rds {
   box-sizing: border-box;
-  width:33.333%;
-  float:left;
+  width: 33.333%;
+  float: left;
 }
-.flex{
+
+.flex {
   display: flex;
   flex-direction: row;
 }
-.scrum-board{
+
+.scrum-board {
   flex: 1;
-  padding:20px;
-  border-right:1px solid #ddd;
-  border-bottom:1px solid #ddd;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
-.scrum-board:first-child{
+
+.scrum-board:first-child {
   flex: 1;
-  padding:20px;
-  border-left:1px solid #ddd;
+  padding: 20px;
+  border-left: 1px solid #ddd;
 }
-.input-group{
+
+.input-group {
   position: relative;
   display: block;
   padding: 10px;
@@ -76,22 +112,28 @@ body{
   border-radius: 5px;
   background-color: #f1f1f1;
 }
-.input-group span{
-  color:#333;
+
+.input-group span {
+  color: #333;
   font-weight: bold;
 }
-.inline{
+
+.inline {
   display: inline;
 }
-.float-right{
+
+.float-right {
   float: right;
 }
-.overflow{
-  overflow: auto;
+
+.overflow {
+  overflow: visible;
 }
-.margin-top-10{
+
+.margin-top-10 {
   margin-top: 10px;
 }
+
 .placeholder {
   display: block;
   background-color: #fff;
