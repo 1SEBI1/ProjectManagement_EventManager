@@ -14,7 +14,7 @@ window.onload = function() {
       },
       {
         title: "Department BBQ",
-        start: new Date(2019, 09, 27, 12, 00, 00),
+        start: new Date(2019, 09, 27, 12, 30, 00),
         end: new Date(2019, 09, 27, 22, 00, 00)
       },
       {
@@ -34,7 +34,7 @@ window.onload = function() {
       },
       {
         title: "Department BBQ",
-        start: new Date(2019, 08, 27, 12, 00, 00),
+        start: new Date(2019, 08, 27, 12, 45, 00),
         end: new Date(2019, 08, 27, 22, 00, 00)
       },
       {
@@ -44,7 +44,7 @@ window.onload = function() {
       },
       {
         title: "Open Day",
-        start: new Date(2019, 10, 5, 12, 00, 00),
+        start: new Date(2019, 10, 5, 12, 30, 00),
         end: new Date(2019, 10, 5, 13, 00, 00)
       },
       {
@@ -77,7 +77,13 @@ window.onload = function() {
       var calendar = new FullCalendar.Calendar(el, {
         plugins: [ "dayGrid" ],
         events: events,
+        eventTimeFormat: {
+          hour: "2-digit",
+          minute: "2-digit",
+          meridiem: false
+        },
         eventClick: function(info) {
+          console.log(info);
           alert("Event: " + info.event.title + "\n" +
                 "Start: " + info.event.start.toUTCString() + "\n" +
                 "End: " + info.event.end.toUTCString());
