@@ -1,18 +1,21 @@
-!doctype html>
-<html class="no-js" lang="en">
+<!doctype html>
+<html class="no-js" lang="en" style = "background-color: #555">
 <head>
 <meta charset = "utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../css/event.css">
+<link rel="stylesheet" href="H:\Year 3\createevent.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js" integrity="sha256-23hi0Ag650tclABdGCdMNSjxvikytyQ44vYGo9HyOrU=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="H:\Year 3\createevent.js"> </script>
 
 
 </head>
 
 <body>
 
-  <h3 style = "padding-left: 750px;"> Create Event </h3>
+  <h3 style = "padding-left: 750px; font-size: 16px; font-family: arial;"> Create Event </h3>
 
-  <form>
+  <form style = "background-color: #800080; border-color: black;">
 
     <fieldset>
 
@@ -48,7 +51,14 @@
         <option value= "bob"> Bob </option>
         <option value= "dave"> Dave </option>
       </select>
-      <button type= "button" id = "addStaff()"> Add Staff </button>
+      <button type= "button" id = "addStaff" style = "background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;"> Add Staff </button>
     </p>
 
 
@@ -56,15 +66,31 @@
       <label style = "padding-right: 300px; padding-left: 200px;"> Current Staff </label>
       <select id = "currentStaff">
         <option value= "Staff"> Current Staff Members </option>
+        <option value= "1">1</option>
+        <option value = "2"> 2</option>
       </select>
-      <button type= "button" id= "removeStaff"> Remove Staff </button>
+      <button type= "button" id= "removeStaff" style = "background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;"> Remove Staff </button>
     </p>
 
 
     <p>
       <label style = "padding-right: 266px; padding-left: 200px;"> Create Event Task </label>
       <input type = "text" id = "addTasks" value = "" style= " align: center; x: 425px; y: 189px; width: 382px; height: 30px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;"/>
-      <button type= "button" onclick = "addTask()"> Add Task </button>
+      <button type= "button" onclick = "addTask()" style = "background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;"> Add Task </button>
     </p>
 
     <p>
@@ -73,23 +99,63 @@
         <option value= "currentTasks"> Current Event Tasks </option>
 
       </select>
-      <button type= "button"  id = "removeTask" > Remove Task </button>
+      <button type= "button"  id = "removeTask" style = "background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;
+      margin-right: 30px;" > Remove Task </button>
     </p>
 
-  </fieldset
+  </fieldset>
+
 
 </form>
 
-<button type = "button" style = "color: black;" > Cancel </button>
-<button type = "button" > Add Event </button>
-
-
-
-
-
 </body>
+<button type = "button" style = "color: black; margin-right: 1000px; background-color: #4CAF50;
+border: none;
+color: white;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 10px;" onClick = window.location.href='H:\Year 3\ index.html'> Cancel </button>
+<button type = "button" style = "margin-right: 700px; background-color: #4CAF50;
+border: none;
+color: white;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 13px;"  onClick =  window.location.href = 'login.html'> Add Event </button>
 
 
+<script type = "text/javascript">
+
+  $(document).ready(function() {
+    $("#removeTask").on("click", function() {
+      $("#currentTask option:selected").remove();
+    });
+  });
+
+</script>
+
+<script type = "text/javascript">
+
+function addStaff() {
+   var select = document.getElementById("currentStaff"),
+   txtVal = document.getElementById("addStaff").value,
+   newVal = document.createTextNode(txtVal);
+
+   txtval.appendChild(newVal);
+   select.insertBefore(newOption, select.lastChild);
+}
+
+</script>
 
 
 </html>
