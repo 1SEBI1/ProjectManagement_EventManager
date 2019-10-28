@@ -1,0 +1,67 @@
+{
+  "events": [
+    {
+      "id": "000000001",
+      "title": "Hack",
+      "summary": "Make something.",
+      "detail": "Note this event is BYOBooks.",
+      "location": "RGU",
+      "dateBegin": "20191231T090000",
+      "dateEnd": "20191231T170000",
+      "categories": [
+        "hack",
+        "compsoc",
+        "programming"
+      ],
+      "hosts": [
+        "000000001"
+      ],
+      "staff": [
+        "000000001"
+      ],
+      "tasks": [
+        "000000001"
+      ],
+      "notes": [
+        "000000001"
+      ]
+    }
+  ],
+  "staff": [
+    {
+      "id": "000000001",
+      "firstName": "Jane",
+      "middleName": "Robert Gordon",
+      "lastName": "Doe",
+      "employed": true,
+      "categories" : [
+        "programming",
+        "networking",
+        "articulation"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "000000001",
+      "revisions" : [
+        "{text_revision_3...}",
+        "Updated note.",
+        "Initial note."
+      ]
+    }
+  ],
+  "tasks": [
+    {
+    "id": "000000001",
+      "dateDue": "20200101T090000",
+      "status": "20200102T090000",
+      "title": "Organise Catering",
+      "summary": "Budget set - get quotes and put to tender.",
+      "detail": "WhatsApp and check availability with Aunt Bessie and Mr Kipling.",
+      "staff": [
+        "000000001"
+      ]
+    }
+  ]
+}
