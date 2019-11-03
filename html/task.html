@@ -1,74 +1,74 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en" style = "background-color: #555">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport:" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/task.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/task.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js" integrity="sha256-23hi0Ag650tclABdGCdMNSjxvikytyQ44vYGo9HyOrU=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="/js/task.js"> </script>
+
+
 </head>
 
 <body>
-  <h3>Create Task</h3>
-  <form>
-    <div>
-      <div class="dropdown">
-        <label>Select Event</label>
-        <select id="selectEvent">
-          <option value="event1">Event1</option>
-          <option value="event2">Event2</option>
-          <option value="event3">Event3</option>
-        </select>
-      </div>
 
-      <div class="dropdown">
-        <label>Select Staff</label>
-        <select id="selectStaff">
-          <option value="staff1">Staff1</option>
-          <option value="staff2">Staff2</option>
-          <option value="staff3">Staff3</option>
-        </select>
-      </div>
+  <h3 style = "padding-left: 750px; font-size: 16px; font-family: arial;"> Assigns Task </h3>
 
-      <div class="check">
-        <label>Skills</label>
-        <label class="container">Task1
-          <input type="checkbox" checked="checked"
-          <span class="checkmark"></span>
-        </label>
+  <form style = "background-color: #800080; border-color: black;">
 
-        <label class="container">Task2
-          <input type="checkbox" checked="checked"
-          <span class="checkmark"></span>
-        </label>
+    <fieldset>
 
-        <label class="container">Task3
-          <input type="checkbox" checked="checked"
-          <span class="checkmark"></span>
-        </label>
+    <p>
+      <label style = "padding-right: 300px; padding-left: 200px;" > Select Event </label>
+      <select id = "selectEvent">
+        <option value= "eventSelect"> Select an event </option>
+        <option value= "bob"> Event 1 </option>
+        <option value= "dave"> Event 2 </option>
+      </select>
+    </p>
 
-        <label class="container">Task4
-          <input type="checkbox" checked="checked"
-          <span class="checkmark"></span>
-        </label>
 
-        <label class="container">Task5
-          <input type="checkbox" checked="checked"
-          <span class="checkmark"></span>
-        </label>
-      </div>
+    <p>
+      <label style = "padding-right: 300px; padding-left: 200px;"> Select Staff </label>
+      <select id = "staffSelect">
+        <option value= "Staff"> Select a staff member </option>
+        <option value= "1">1</option>
+        <option value = "2"> 2</option>
+      </select>
+    </p>
 
-      <div class="mainbutton">
-        <button type="button">Cancel</button>
-      </div>
+    <p>
+      <label style = "padding-right: 300px; padding-left: 200px;"> Assign Tasks</label>
+      <input type="checkbox" name="" value="">Task 1</input>
+      <input type="checkbox" name="" value="">Task 2</input>
+      <input type="checkbox" name="" value="">Task 3</input>
+      <input type="checkbox" name="" value="">Task 4</input>
+      <input type="checkbox" name="" value="">Task 5</input>
+    </p>
 
-      <div class="mainbutton">
-        <button type="button">Save Staff</button>
-      </div>
+  </fieldset>
 
-    </div>
-  </form>
+
+</form>
+
 </body>
+<button type = "button" style = "color: black; margin-right: 1000px; background-color: #4CAF50;
+border: none;
+color: white;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 10px;" onClick = window.location.href='-/github/ProjectManagement_EventHandker/html/index.html'> Cancel </button>
+<button type = "button" style = "margin-right: 700px; background-color: #4CAF50;
+border: none;
+color: white;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 13px;"  onClick =  window.location.href = 'login.html'> Save Event </button>
 
-<script src="/js/task.js"></script>
 
 </html>

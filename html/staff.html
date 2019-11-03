@@ -1,68 +1,81 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en" style = "background-color: #555">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport:" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/staff.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"
-  integrity="sha256-23hi0Ag650tclABdGCdMNSjxvikytyQ44vYGo9HyOrU="
-  crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/staff.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js" integrity="sha256-23hi0Ag650tclABdGCdMNSjxvikytyQ44vYGo9HyOrU=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="H:\Year 3\createevent.js"> </script>
+
+
 </head>
 
 <body>
-  <h3>Create Staff</h3>
-  <form>
-    <div>
-      <div class="text">
-        <label>Staff Name</label>
-        <input type="text" id="StaffName" value="">
-      </div>
-      <div class="check">
-        <label>Skills</label>
-        <label class="container">Skill1
-          <input type="checkbox" checked=""
-          <span class="checkmark"></span>
-        </label>
 
-        <label class="container">Skill2
-          <input type="checkbox" checked=""
-          <span class="checkmark"></span>
-        </label>
+  <h3 style = "padding-left: 750px; font-size: 16px; font-family: arial;"> Create Event </h3>
 
-        <label class="container">Skill3
-          <input type="checkbox" checked=""
-          <span class="checkmark"></span>
-        </label>
+  <form style = "background-color: #800080; border-color: black;">
 
-        <label class="container">Skill4
-          <input type="checkbox" checked=""
-          <span class="checkmark"></span>
-        </label>
+    <fieldset>
 
-        <label class="container">Skill5
-          <input type="checkbox" checked=""
-          <span class="checkmark"></span>
-        </label>
-      </div>
+    <p>
+    <label style = "padding-right: 300px; padding-left: 200px;"> Staff Name </label>
+    <input type = "text" id = "myName" value = "" style= " align: center; x: 425px; y: 189px; width: 382px; height: 35px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;"/>
+   </p>
 
-      <div class="text">
-        <label>Other Skills</label>
-        <input type="text" id="OtherSkills" value="">
-        <button type="button" id="addskill">Add Skill</button>
-        <button type="button" id="removeSkill">Remove Skill</button>
-      </div>
+    <p>
+      <p>
+        <label style = "padding-right: 300px; padding-left: 200px;"> Assign Tasks</label>
+        <input type="checkbox" name="" value="">Task 1</input>
+        <input type="checkbox" name="" value="">Task 2</input>
+        <input type="checkbox" name="" value="">Task 3</input>
+        <input type="checkbox" name="" value="">Task 4</input>
+        <input type="checkbox" name="" value="">Task 5</input>
+      </p>
+    </p>
 
-      <div class="mainbutton">
-        <button type="button">Cancel</button>
-      </div>
 
-      <div class="mainbutton">
-        <button type="button">Create Staff</button>
-      </div>
+    <p>
+      <label style = "padding-right: 266px; padding-left: 200px;">Other Skills </label>
+      <input type = "text" id = "addTasks" value = "" style= " align: center; x: 425px; y: 189px; width: 382px; height: 30px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;"/>
+      <button type= "button" onclick = "addTask()" style = "background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;"> Add Skill </button>
+      <button type= "button" onclick = "addTask()" style = "background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;"> Remove Skill </button>
+    </p>
 
-    </div>
-  </form>
+  </fieldset>
+
+
+</form>
+
 </body>
-
-</html>
+<button type = "button" style = "color: black; margin-right: 1000px; background-color: #4CAF50;
+border: none;
+color: white;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 10px;" onClick = window.location.href='-/github/ProjectManagement_EventHandker/html/index.html'> Cancel </button>
+<button type = "button" style = "margin-right: 700px; background-color: #4CAF50;
+border: none;
+color: white;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 13px;"  onClick =  window.location.href = 'login.html'> Add Event </button>
