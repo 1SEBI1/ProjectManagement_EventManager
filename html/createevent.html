@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" style = "background-color: #555">
+<html class="no-js" lang="en" style = "background-color: #800000;">
 <head>
 <meta charset = "utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,63 +11,59 @@
 
 </head>
 
-<body>
+<body style = "text-align: center;">
 
-  <h3 style = "padding-left: 750px; font-size: 16px; font-family: arial;"> Create Event </h3>
+  <h3 style = " font-size: 16px; font-family: monospace; ;"> Create Event </h3>
 
-  <form style = "background-color: #800080; border-color: black;">
+  <form style = "background-color: #e0e0e0; border-color: black; border: 20px;">
 
-    <fieldset>
+    <fieldset style = "text-align: center; border: 10px;">
 
     <p>
-    <label style = "padding-right: 300px; padding-left: 200px;"> Event Name </label>
+    <label> Event Name </label>
     <input type = "text" id = "myName" value = "" style= " align: center; x: 425px; y: 189px; width: 382px; height: 35px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;"/>
    </p>
 
     <p>
-      <label style = "padding-right: 307px; padding-left: 200px;"> Event Type </label>
+      <label style= "margin-right: 7px;" > Event Type </label>
       <input type = "text" id = "myType" value = "" style= " align: center; x: 425px; y: 189px; width: 382px; height: 35px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;"/>
     </p>
 
     <p>
-      <label style = "padding-right: 350px; padding-left: 200px;"> Event Date </label>
-      <input type = "date" id = "myDate" value = ""/>
+      <label style = "margin-right: 10px;"> Event Date </label>
+      <input type = "date" id = "myDate" value = "" style ="width: 380px; height: 35px;"/>
     </p>
 
     <p>
-      <label style = "padding-right: 282px; padding-left: 200px;"> Event Location </label>
-      <input type = "text" id = "myLocation" value = "" style= " align: center; x: 425px; y: 189px; width: 382px; height: 35px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;"/>
+      <label> Event Location </label>
+      <input type = "text" id = "myLocation" value = "" style= " background: #FFFFFF; width: 380px; height: 35px; margin-right: 17px;"/>
     </p>
 
     <p>
-      <label style = "padding-right: 264px; padding-left: 200px;"> Event Description </label>
-      <textarea id = "descriptionArea" rows = "4" cols = "49" style= " align: center; x: 425px; y: 189px; width: 382px; height: 60px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;">Your Text Here</textarea>
+      <label> Event Description </label>
+      <input type = "text" id = "myDescription" value = "" style= " background: #FFFFFF; width: 380px; height: 35px; margin-right: 33px;"/>
     </p>
 
     <p>
-      <label style = "padding-right: 300px; padding-left: 200px;" > Assign Staff </label>
-      <select id = "addStaff">
-        <option value= "assignStaff"> Assign Staff Members </option>
-        <option value= "bob"> Bob </option>
-        <option value= "dave"> Dave </option>
-      </select>
-      <button type= "button" id = "addStaff" style = "background-color: #4CAF50;
+      <label style= "text-align: center; margin-left: 105px;"> Assign Staff </label>
+      <input type = "text" id = "assignStaff" value = "" style= " align: center; x: 425px; y: 189px; width: 382px; height: 30px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;"/>
+      <button type= "button" onclick= "addStaff()" style = "background-color: #4CAF50;
       border: none;
       color: white;
       padding: 10px 10px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 13px;"> Add Staff </button>
+      font-size: 13px;
+      width: 100px;
+      height: 40px;"> Add Staff </button>
     </p>
 
 
     <p>
-      <label style = "padding-right: 300px; padding-left: 200px;"> Current Staff </label>
-      <select id = "currentStaff">
+      <label style = "text-align: center; margin-left: 102px;"> Current Staff </label>
+      <select id = "currentStaff" style= "width: 385px; height: 35px; ">
         <option value= "Staff"> Current Staff Members </option>
-        <option value= "1">1</option>
-        <option value = "2"> 2</option>
       </select>
       <button type= "button" id= "removeStaff" style = "background-color: #4CAF50;
       border: none;
@@ -76,12 +72,14 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 13px;"> Remove Staff </button>
+      font-size: 13px;
+      width: 100px;
+      height: 40px;"> Remove Staff </button>
     </p>
 
 
     <p>
-      <label style = "padding-right: 266px; padding-left: 200px;"> Create Event Task </label>
+      <label style = "margin-left: 67px;"> Create Event Task </label>
       <input type = "text" id = "addTasks" value = "" style= " align: center; x: 425px; y: 189px; width: 382px; height: 30px; background: #FFFFFF; border: 1px solid #000000; border-radius: 0px;"/>
       <button type= "button" onclick = "addTask()" style = "background-color: #4CAF50;
       border: none;
@@ -90,12 +88,14 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 13px;"> Add Task </button>
+      font-size: 13px;
+      width: 100px;
+      height: 40px;"> Add Task </button>
     </p>
 
     <p>
-      <label style = "padding-right: 300px; padding-left: 200px;"> Current Event Task </label>
-      <select id = "currentTask">
+      <label style = "margin-left: 90px;"> Current Event Task </label>
+      <select id = "currentTask" style = "width: 385px; height: 35px;">
         <option value= "currentTasks"> Current Event Tasks </option>
 
       </select>
@@ -107,6 +107,8 @@
       text-decoration: none;
       display: inline-block;
       font-size: 13px;
+      width: 100px;
+      height: 40px;
       margin-right: 30px;" > Remove Task </button>
     </p>
 
@@ -116,46 +118,69 @@
 </form>
 
 </body>
+<ul style = "text-align: center;">
 <button type = "button" style = "color: black; margin-right: 1000px; background-color: #4CAF50;
 border: none;
-color: white;
-padding: 10px 10px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 10px;" onClick = window.location.href='H:\Year 3\ index.html'> Cancel </button>
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ float:center;" onClick = window.location.href='index.html'> Cancel </button>
 <button type = "button" style = "margin-right: 700px; background-color: #4CAF50;
 border: none;
-color: white;
-padding: 10px 10px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 13px;"  onClick =  window.location.href = 'login.html'> Add Event </button>
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ float: center;"  onClick =  window.location.href = '.html'> Add Event </button>
+</ul>
 
+<script type= "text/javascript">
+$(document).ready(function() {
+  $("#removeStaff").on("click", function() {
+    $("#currentStaff option:selected").remove();
+  });
+});
+
+</script>
 
 <script type = "text/javascript">
-
   $(document).ready(function() {
     $("#removeTask").on("click", function() {
       $("#currentTask option:selected").remove();
     });
   });
-
 </script>
 
 <script type = "text/javascript">
-
 function addStaff() {
    var select = document.getElementById("currentStaff"),
-   txtVal = document.getElementById("addStaff").value,
-   newVal = document.createTextNode(txtVal);
+   txtVal = document.getElementById("assignStaff").value,
+   newOpt = document.createElement("OPTION"),
+   newOptVal = document.createTextNode(txtVal);
 
-   txtval.appendChild(newVal);
-   select.insertBefore(newOption, select.lastChild);
+   newOpt.appendChild(newOptVal);
+   select.insertBefore(newOpt, select.lastChild);
 }
-
 </script>
 
+<script type = "text/javascript">
+function addTask() {
+   var select = document.getElementById("currentTask"),
+   txtVal = document.getElementById("addTasks").value,
+   newOption = document.createElement("OPTION"),
+   newOptionVal = document.createTextNode(txtVal);
 
+   newOption.appendChild(newOptionVal);
+   select.insertBefore(newOption, select.lastChild);
+}
+</script>
 </html>
