@@ -82,21 +82,6 @@ window.onload = function() {
           hour: "2-digit",
           minute: "2-digit",
           meridiem: false
-        },
-        eventClick: function(info) {
-          console.log(info);
-          alert("Event: " + info.event.title + "\n" +
-                "Start: " + info.event.start.toUTCString() + "\n" +
-                "End: " + info.event.end.toUTCString());
-        },
-        eventRender: function(info) {
-          console.log(info);
-          let html = "<p>Just a popup.</p>"
-          var popper = new Popper(info.el, html, {
-            title: info.event.title,
-            placement: "right",
-            trigger: "hover"
-          });
         }
       });
 
