@@ -6,21 +6,21 @@
 <link rel="stylesheet" href="../css/task.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js" integrity="sha256-23hi0Ag650tclABdGCdMNSjxvikytyQ44vYGo9HyOrU=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="/js/task.js"> </script>
+<script src="../js/task.js"> </script>
 
 
 </head>
 
-<body>
+<body style = "text-align: center;">
 
-  <h3 style = "padding-left: 750px; font-size: 16px; font-family: arial;"> Assigns Task </h3>
+  <h3 style = "font-size: 16px; font-family: monospace"> Assigns Task </h3>
 
-  <form style = "background-color: #800080; border-color: black;">
+  <form style = "background-color: #e0e0e0; border-color: black; border: 20px;">
 
-    <fieldset>
+    <fieldset style = "text-align: center; border: 10px;">
 
     <p>
-      <label style = "padding-right: 300px; padding-left: 200px;" > Select Event </label>
+      <label> Select Event </label>
       <select id = "selectEvent">
         <option value= "eventSelect"> Select an event </option>
         <option value= "bob"> Event 1 </option>
@@ -30,7 +30,7 @@
 
 
     <p>
-      <label style = "padding-right: 300px; padding-left: 200px;"> Select Staff </label>
+      <label> Select Staff </label>
       <select id = "staffSelect">
         <option value= "Staff"> Select a staff member </option>
         <option value= "1">1</option>
@@ -39,7 +39,7 @@
     </p>
 
     <p>
-      <label style = "padding-right: 300px; padding-left: 200px;"> Assign Tasks</label>
+      <label style = "margin-right: 10px;">Assign Tasks</label>
       <input type="checkbox" name="" value="">Task 1</input>
       <input type="checkbox" name="" value="">Task 2</input>
       <input type="checkbox" name="" value="">Task 3</input>
@@ -53,22 +53,31 @@
 </form>
 
 </body>
+
+<ul style = "text-align: center;">
 <button type = "button" style = "color: black; margin-right: 1000px; background-color: #4CAF50;
 border: none;
-color: white;
-padding: 10px 10px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 10px;" onClick = window.location.href='-/github/ProjectManagement_EventHandker/html/index.html'> Cancel </button>
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ float:center;" onClick = window.location.href='index.html'> Cancel </button>
 <button type = "button" style = "margin-right: 700px; background-color: #4CAF50;
 border: none;
-color: white;
-padding: 10px 10px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 13px;"  onClick =  window.location.href = 'login.html'> Save Event </button>
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ float: center;"  onClick =  window.location.href = '.html'> Add Event </button>
+</ul>
 
 
 </html>
