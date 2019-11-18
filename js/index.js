@@ -88,8 +88,8 @@ window.onload = function() {
           listYear: { buttonText: 'List View' }
         },
         header: {
-          left: 'title',
-          center: '',
+          left: 'today,prev,next',
+          center: 'title',
           right: 'dayGridMonth,listYear'
         }
       });
