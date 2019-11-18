@@ -76,12 +76,21 @@ window.onload = function() {
       console.log(el);
 
       var calendar = new FullCalendar.Calendar(el, {
-        plugins: [ "dayGrid" ],
+        plugins: [ "dayGrid", "list" ],
         events: events,
         eventTimeFormat: {
           hour: "2-digit",
           minute: "2-digit",
           meridiem: false
+        },
+        views: {
+          dayGridMonth: { buttonText: 'Calendar View' },
+          listYear: { buttonText: 'List View' }
+        },
+        header: {
+          left: 'title',
+          center: '',
+          right: 'dayGridMonth,listYear'
         }
       });
 
